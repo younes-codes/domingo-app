@@ -1,0 +1,17 @@
+<a
+		[ngClass]="forecast.dayForecasted ? 'active' : ''"
+		[routerLink]="['/mois', forecast.month]"
+		class="month-container"
+>
+	<h2>{{forecast.month}}</h2>
+	<div class="forecast-container">
+		<div class="forecast day">
+			<p>{{forecast.dayForecasted}} jours prévus</p>
+			<p>{{forecast.dayWork}} jours travaillés</p>
+		</div>
+		<div class="forecast ca">
+			<p>{{forecast.dayForecasted * user.tjm | number}} € prévus</p>
+			<p>{{forecast.dayWork * user.tjm | number}} € possible</p>
+		</div>
+	</div>
+</a>

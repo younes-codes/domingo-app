@@ -1,0 +1,19 @@
+<app-month-menu
+		[nextMonth]="nextMonth.month"
+		[previousMonth]="previousMonth.month"
+></app-month-menu>
+
+<app-month-form
+		[dayForecasted]="monthForecast.dayForecasted"
+		[index]="index"
+		[maxDayWorked]="monthForecast.dayWork"
+		[month]="monthForecast.month"
+		[placeholder]="(monthForecast.dayWork).toString()"
+		[user]="user"
+></app-month-form>
+
+<app-month-summary
+		[dayForecasted]="monthForecast.dayForecasted"
+		[month]="monthForecast.month"
+		[user]="user"
+></app-month-summary>

@@ -1,0 +1,17 @@
+<ng-container [formGroup]="monthInputForm">
+	<input type="hidden" value="{{month}}">
+	<div class="input-container">
+		<label [for]="month">{{month}}</label>
+		<input
+				(blur)="onTouched()"
+				[placeholder]="placeholder"
+				class="forecasted-month-input"
+				formControlName="dayForecasted"
+				type="number">
+	</div>
+	<app-month-input-error-message
+			[form]="monthInputForm"
+			[maxDayWorked]="maxDayWorked"
+			[month]="month"
+	></app-month-input-error-message>
+</ng-container>

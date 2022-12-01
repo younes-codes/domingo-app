@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto 60px;
+
+  h1 {
+    a {
+      position: relative;
+    }
+  }
+
+  a {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+}

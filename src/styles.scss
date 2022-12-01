@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;700&family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: content-box;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Anek Devanagari', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+
+  label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  input {
+    margin: 20px 0 0;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-weight: bold;
+
+    &.ng-pristine {
+      border-color: black;
+    }
+
+    &.auth-input.ng-touched.ng-valid {
+      border-color: green;
+    }
+
+    &.forecasted-month-input.ng-dirty.ng-invalid {
+      border-color: crimson;
+      color: crimson;
+    }
+
+    &.auth-input.ng-touched.ng-invalid {
+      border-color: crimson;
+      color: crimson;
+    }
+
+    &::placeholder {
+      color: #8b8383;
+    }
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}

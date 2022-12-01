@@ -1,0 +1,21 @@
+<ng-container [formGroup]="emailFormGroup">
+	<div class="input-container">
+		<label for="email">email</label>
+		<input (blur)="onBlur()"
+		       class="auth-input"
+		       formControlName="email"
+		       id="email"
+		       placeholder="email"
+		       type="text"
+		>
+	</div>
+</ng-container>
+
+<app-error-message
+		[condition]="emailFormGroup.controls['email'].touched &&
+emailFormGroup.controls['email'].hasError('email')"
+		[message]="'Merci de saisir un email valide'"
+>
+</app-error-message>
+
+

@@ -1,0 +1,13 @@
+<ng-container [formGroup]="clientFormGroup">
+	<div class="input-container">
+		<label for="client">client</label>
+		<input class="auth-input" formControlName="client" id="client" placeholder="client"
+		       type="text">
+	</div>
+	<app-error-message
+			[condition]="clientFormGroup.controls['client'].touched
+			&& clientFormGroup.controls['client'].hasError('required')"
+			[message]="'Merci de saisir votre client'"
+	>
+	</app-error-message>
+</ng-container>

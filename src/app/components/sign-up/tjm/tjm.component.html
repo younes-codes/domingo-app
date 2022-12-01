@@ -1,0 +1,17 @@
+<ng-container [formGroup]="tjmFormGroup">
+	<div class="input-container">
+		<label for="tjm">TJM</label>
+		<input class="auth-input"
+		       formControlName="tjm"
+		       id="tjm"
+		       placeholder="TJM"
+		       type="number">
+	</div>
+
+	<app-error-message
+			[condition]="tjmFormGroup.controls['tjm'].touched
+				&& tjmFormGroup.controls['tjm'].hasError('required')"
+			[message]="'Merci de saisir votre TJM'"
+	>
+	</app-error-message>
+</ng-container>

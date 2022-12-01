@@ -1,0 +1,34 @@
+<ng-container [formGroup]="fullNameFormGroup">
+	<div class="input-container">
+		<label for="firstname">prénom</label>
+		<input class="auth-input"
+		       formControlName="firstname"
+		       id="firstname"
+		       placeholder="prénom"
+		       type="text">
+	</div>
+
+	<app-error-message
+			[condition]="fullNameFormGroup.controls['firstname'].touched
+				&& fullNameFormGroup.controls['firstname'].hasError('required')"
+			[message]="'Merci de saisir votre prénom'"
+	>
+	</app-error-message>
+
+	<div class="input-container">
+		<label for="lastname">nom</label>
+		<input
+				class="auth-input"
+				formControlName="lastname"
+				id="lastname"
+				placeholder="nom"
+				type="text">
+	</div>
+
+	<app-error-message
+			[condition]="fullNameFormGroup.controls['lastname'].touched
+				&& fullNameFormGroup.controls['lastname'].hasError('required')"
+			[message]="'Merci de saisir votre nom'"
+	>
+	</app-error-message>
+</ng-container>

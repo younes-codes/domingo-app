@@ -1,0 +1,28 @@
+.dayForecasted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #4caf50;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px 4px #d0d0d0;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100px;
+
+  p {
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+.no.dayForecasted {
+  background-color: #ff9800;
+
+  p {
+    color: black;
+  }
+}

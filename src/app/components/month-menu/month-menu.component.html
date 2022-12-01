@@ -1,0 +1,19 @@
+<div class="menu">
+	<a [routerLink]="['/mois', nextMonth]"
+	   class="back-link arrow left"
+	>
+		<img alt="left arrow" src="../../assets/icons/left-arrow.svg">
+		<span>{{nextMonth}}</span>
+	</a>
+
+	<a [routerLink]="'/'" class="back-link">
+		<img alt="accueil" src="../../assets/icons/home.svg">
+		<span>Accueil</span>
+	</a>
+
+	<a [routerLink]="['/mois', previousMonth]"
+	   class="back-link arrow right">
+		<img alt="right arrow" src="../../assets/icons/right-arrow.svg">
+		<span>{{previousMonth}}</span>
+	</a>
+</div>

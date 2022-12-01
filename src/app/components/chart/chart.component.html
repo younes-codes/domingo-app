@@ -1,0 +1,21 @@
+<div *ngIf="chartCa" class="chart-container">
+	<canvas
+			[datasets]="barChartData"
+			[labels]="barChartsLabels"
+			[legend]="barChartLegend"
+			[options]="barChartOptions"
+			[type]="type"
+			baseChart
+	></canvas>
+</div>
+
+<div *ngIf="chartDay" class="chart-container">
+	<canvas
+			[datasets]="barChartData2"
+			[labels]="barChartsLabels2"
+			[legend]="barChartLegend2"
+			[options]="barChartOptions2"
+			[type]="type2"
+			baseChart
+	></canvas>
+</div>

@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="signUpFormGroup">
+	<app-email formControlName="email"></app-email>
+	<app-full-name formControlName="fullName"></app-full-name>
+	<app-role formControlName="role"></app-role>
+	<app-tjm formControlName="tjm"></app-tjm>
+	<app-password formControlName="password"></app-password>
+	<app-client formControlName="client"></app-client>
+	<app-button [isDisabled]="!signUpFormGroup.valid">S'inscrire maintenant !</app-button>
+</form>

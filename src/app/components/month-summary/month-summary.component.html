@@ -1,0 +1,11 @@
+<div *ngIf="dayForecasted" class="dayForecasted">
+	<p>{{dayForecasted}} jours prévus</p>
+	<br>
+	<p>soit {{dayForecasted * user.tjm | number}} €</p>
+</div>
+
+
+<div *ngIf="!dayForecasted" class="no dayForecasted">
+	<p>Vous n'avez pas encore estimé le mois de {{month}}</p>
+</div>
+

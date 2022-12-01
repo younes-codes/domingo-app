@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+	<app-month-input
+			[maxDayWorked]="maxDayWorked"
+			[month]="month"
+			[placeholder]="placeholder"
+			formControlName="dayForecasted"
+	></app-month-input>
+	<app-button [isDisabled]="!registerForm.valid">enregistrez</app-button>
+</form>

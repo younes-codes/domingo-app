@@ -1,0 +1,11 @@
+.error-container {
+  background-color: #fdf6f6;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #de7575;
+
+  strong, span {
+    color: #c20707 !important;
+  }
+}

@@ -1,0 +1,18 @@
+<ng-container [formGroup]="roleFormGroup">
+	<div class="input-container">
+		<label for="role">Rôle</label>
+		<input
+				class="auth-input"
+				formControlName="role"
+				id="role"
+				placeholder="Développeur, Product Owner..."
+				type="text">
+	</div>
+	<app-error-message
+			[condition]="roleFormGroup.controls['role'].touched
+				&& roleFormGroup.controls['role'].hasError('required')"
+			[message]="'Merci de saisir votre métier'"
+	>
+	</app-error-message>
+</ng-container>
+

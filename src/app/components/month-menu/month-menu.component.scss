@@ -1,0 +1,41 @@
+.back-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin-bottom: 30px;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+
+  .arrow {
+    position: absolute;
+
+    &.left {
+      left: 0;
+      align-items: flex-start;
+    }
+
+    &.right {
+      right: 0;
+      align-items: flex-end;
+    }
+  }
+}

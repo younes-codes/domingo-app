@@ -1,0 +1,20 @@
+:host {
+  width: 100%;
+}
+
+button {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgb(12, 22, 130);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+
+  &:disabled {
+    background-color: rgb(123 131 213 / 50%);
+  }
+}
